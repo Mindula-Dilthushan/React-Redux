@@ -6,13 +6,15 @@
  *
  */
 import './App.css';
+import ButtonComponent from "./components/ButtonComponent";
 
 function App() {
-  return (
-    <div className="App">
-
-    </div>
-  );
+    return (
+        <div className="App">
+            <h2>Welcome React Redux</h2>
+            <ButtonComponent/>
+        </div>
+    );
 }
 
 export default App;
