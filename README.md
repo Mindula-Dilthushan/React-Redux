@@ -76,3 +76,11 @@ Store (all application data) [One simple JavaScript Object]
         - components (user form view all, save, updates)
     - Reducer (take in actions and update part of application state)
         - actions (any changes made to the application state)
+
+<div align="center">
+
+<img width="200" src="https://github.com/Mindula-Dilthushan/React-Redux/blob/master/src/assets/img/react-redux.png">
+
+</div>
+
+
