@@ -68,4 +68,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# React-Redux" 
+
+---
+ 
+Store (all application data) [One simple JavaScript Object]
+    - Provider (make store available to components)
+        - components (user form view all, save, updates)
+    - Reducer (take in actions and update part of application state)
+        - actions (any changes made to the application state)

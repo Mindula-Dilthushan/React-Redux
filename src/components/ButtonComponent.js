@@ -5,14 +5,15 @@
  * author email     : minduladilthushan1@gmail.com
  *
  */
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
+import React from "react";
 
-    </div>
-  );
+const ButtonComponent = () => {
+    return (
+        <div>
+
+        </div>
+    )
 }
 
-export default App;
+export default ButtonComponent;
