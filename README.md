@@ -71,15 +71,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ---
  
-Store (all application data) [One simple JavaScript Object]
+- Store (all application data) [One simple JavaScript Object]
+
     - Provider (make store available to components)
         - components (user form view all, save, updates)
+      
     - Reducer (take in actions and update part of application state)
         - actions (any changes made to the application state)
 
 <div align="center">
 
-<img width="200" src="https://github.com/Mindula-Dilthushan/React-Redux/blob/master/src/assets/img/react-redux.png">
+<img width="500" src="https://github.com/Mindula-Dilthushan/React-Redux/blob/master/src/assets/img/react-redux.png">
 
 </div>
 
