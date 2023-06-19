@@ -8,6 +8,8 @@
  */
 import React, {useEffect} from "react";
 import {connect} from "react-redux";
+import {bindActionCreators} from "redux";
+import {selectUser} from "../actions/userAction";
 
 const mapStateToProps = (state) => {
     return {
@@ -15,11 +17,10 @@ const mapStateToProps = (state) => {
     };
 };
 
-
 const ViewAllUsers = (props) => {
 
-    useEffect(() => {
 
+    useEffect(() => {
     }, []);
 
     const usersList = () => {
@@ -29,13 +30,13 @@ const ViewAllUsers = (props) => {
         }
 
         return props.user.map((user) => (
-            <div key={user.userId}>
+            <li key={user.id} onClick={() => props.selectUser(user)}>
                 <h3>User ID : {user.userId} </h3>
                 <h3>User Name : {user.userName} </h3>
                 <h3>User Email : {user.userEmail} </h3>
                 <h3>User Description : {user.userDesc} </h3>
                 <br/>
-            </div>
+            </li>
         ));
     };
 
@@ -53,5 +54,9 @@ const ViewAllUsers = (props) => {
     }
 };
 
-export default connect(mapStateToProps)(ViewAllUsers);
+const matchDispatchToProps = (dispatch) => {
+    return bindActionCreators({selectUser: selectUser}, dispatch);
+}
+
+export default connect(mapStateToProps, matchDispatchToProps)(ViewAllUsers);
 

@@ -7,3 +7,4 @@
  *
  */
 export const FETCH_USERS_CLICK = "FETCH_USERS_CLICK";
+export const SELECT_USER = "SELECT_USER";

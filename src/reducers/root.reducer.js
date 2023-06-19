@@ -8,9 +8,11 @@
  */
 import {combineReducers} from "redux";
 import userReducer from "./user.reducer";
+import userSelectReducer from "./user_select.reducer";
 
 const rootReducer = combineReducers({
-    user: userReducer
+    user: userReducer,
+    select_user: userSelectReducer
 })
 
 export default rootReducer;

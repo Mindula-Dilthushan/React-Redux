@@ -6,7 +6,7 @@
  *
  *
  */
-import {FETCH_USERS_CLICK} from "./types";
+import {FETCH_USERS_CLICK, SELECT_USER} from "./types";
 
 //action creator
 export const fetchUsers = () => {
@@ -40,3 +40,10 @@ export const fetchUsers = () => {
         ]
     }
 }
+
+export const selectUser = (user) => {
+    return {
+        type: SELECT_USER,
+        payload: user
+    }
+};
