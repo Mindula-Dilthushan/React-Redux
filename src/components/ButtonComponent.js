@@ -20,11 +20,14 @@ const ButtonComponent = () => {
     }
 
     return (
-        <div>
-            <button onClick={handleFetchUsers}> Click Me</button>
-
-            <ViewAllUsers/>
-        </div>
+        <>
+            <div>
+                <button onClick={handleFetchUsers}> Click Me</button>
+            </div>
+            <div>
+                <ViewAllUsers/>
+            </div>
+        </>
     )
 }
 
