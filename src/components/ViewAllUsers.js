@@ -10,6 +10,7 @@ import React, {useEffect} from "react";
 import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
 import {selectUser} from "../actions/userAction";
+import SelectUser from "./SelectUser";
 
 const mapStateToProps = (state) => {
     return {
@@ -50,6 +51,7 @@ const ViewAllUsers = (props) => {
     } else {
         return <>
             <ul>{usersList()}</ul>
+            <SelectUser/>
         </>;
     }
 };
