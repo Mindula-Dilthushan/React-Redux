@@ -6,7 +6,7 @@
  *
  *
  */
-import React, {useEffect} from "react";
+import React from "react";
 import {connect} from "react-redux";
 
 const mapStateToProps = (state) => {
@@ -15,12 +15,11 @@ const mapStateToProps = (state) => {
     };
 }
 
-
 const SelectUser = (props) => {
 
-    useEffect(() => {
-        console.log(props.selectedUser)
-    }, []);
+    // useEffect(() => {
+    //     console.log(props.selectedUser)
+    // }, []);
 
     if (!props.selectedUser) {
         return (<h3> Select a User... </h3>);
